@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo nav-link">Logo</a>
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="./index.html" class="nav-menu-link nav-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="./index.html" class="nav-menu-link nav-link">Productos</a></li>
+                <li class="nav-menu-item"><a href="#form" class="nav-menu-link nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+    <form method="post" class="form" id="form">
+        <h3 class="texto" id="contacto-titulo"><span>CONTACTENOS PARA HACER UN PEDIDO</span></h3>
+        <label for="name">Nombre <span> </span></label>
+        <input name="name" required type="text" class="name" placeholder="Juan">
+        <label for="email">Correo electrónico <span>*</span></label>
+        <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+        <label for="date">Fecha de entrega requerida<span>*</span></label>
+        <input name="date" type="date" id="date" required>
+        <label for="message">Torta a solicitar</label>
+        <textarea id="message" name="message" id="" cols="30" rows="10" required placeholder="Especifique la torta requerida y si desea hacer algun cambio en sabores"></textarea>
+        <button type="submit" class="btn-primary-full"><span>Enviar</span></button>
+        
+    </form>
+    <a href="mailto:agusarias2002@gmail.com" id="trucazo">mail</a>
+   </div> 
+   <footer class="footer">
+    <div class="footer-content">
+    <ul class="socials">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    </div>
+    <div class="footer-bottom">
+    <p>
+      Hecho con cariño<br>Copyright 2023 - Todos los derechos reservados.
+    </p>
+    </div>
+
+  </footer>
+</body>
+</html>

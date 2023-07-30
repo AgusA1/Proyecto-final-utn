@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(228, 198, 203);
+}
+header{
+    background-color: rgb(238, 179, 189);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+   
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover{
+    background-color: rgb(222, 153, 165);
+    transition: 0.5s;
+}
+.nav-toggle{
+    color:white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+@media (max-width:768px){
+    body{ 
+        padding-top: 70px;
+    }
+    header{
+        height: 60px;
+    }
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: rgb(242, 117, 138);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: 0.3s
+    }
+    .nav-menu-item{
+        line-height: 70px;
+    }
+    .nav-menu-link:hover{
+        background: none;
+        color:rgb(182, 24, 140);
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-menu_visible{
+        left:0;
+    }
+
+}
+
+.section-inicio{
+    background-image: url("https://www.tapasmagazine.es/wp-content/uploads/2019/03/postres-dulces.jpg");
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 75px;
+}
+.entrada-rep{
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    height: 300px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+} 
+.texto{
+    text-shadow: 2px 2px 12px rgb(237, 226, 226), -6px -6px 12px rgb(242, 117, 138) ;
+    text-align: center;
+    
+}
+.productos-generales{
+    background: rgb(228, 198, 203);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%; 
+ 
+}
+.titulo-productos{
+    text-shadow:2px 2px 12px rgb(237, 226, 226), -6px -6px 12px rgb(242, 117, 138) ;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.productos img{
+    width: 400px;
+    height: 100%;
+    border-style: solid;
+    border: 5px;
+    border-color: beige;
+    float: right;
+}
+.especificaciones{
+    text-align: center;
+    padding-top: 60px;
+    
+}
+.cajas{
+    width: 50%;
+    border:10px;
+    border-style:solid ;
+    border-color:white;
+ }
+
+ /* formulario */
+
+ #contacto-titulo{
+    font-size: 25px;
+    color: white;
+ }
+ .form {
+    max-inline-size: 550px;
+    margin: auto;
+    padding-top: 90px;
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  .btn-primary-full{
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor:pointer;
+    transition: .3s;
+  }
+  .btn-primary-full span{
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+  }
+  .btn-primary-full:hover span{
+    background: none;
+  }
+  .btn-primary-full:active{
+    transform: scale(0.9);
+  }
+  #trucazo{
+    opacity: 0;
+  }
+  footer{
+    height:auto;
+    width: 100vw;
+    padding-top:40px;
+    font-weight: bold;
+    color: white;
+
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    color:azure;
+  }
+  .socials a i{
+    font-size: 2.1rem;
+    transition: color .4s ease;
+  }
+  .socials a:hover i{
+    color:black
+  }
+  .footer-bottom{
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+
+  }
+
+  @media (max-width:1146px){
+    .productos img{
+        width: 100%;
+        height: 100%;
+        float: right;
+    }
+  }
+  
